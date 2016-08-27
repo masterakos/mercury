@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Mercury Shop</title>
+    <meta charset="utf-8">
     <link href="assets/theme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/theme/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/theme/css/select2.min.css" rel="stylesheet">
