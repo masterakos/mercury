@@ -1,15 +1,5 @@
 angular
   .module('MercuryApp')
-  .controller('AppController', AppController);
-  
-AppController.$inject = [];
-
-function AppController() {
-  var vm = this;
-}
-
-angular
-  .module('MercuryApp')
   .controller('TopHeaderController', TopHeaderController);
   
 TopHeaderController.$inject = ['locals', 'companyInfo', 'localizationService'];

@@ -1,0 +1,18 @@
+{
+  "language": "ελληνικά",
+  "locals": {
+    "dollar": "δολλάριο",
+    "pound": "λίρα",
+    "euro": "ευρω",
+    "wishlist": "αγαπημένα",
+    "compare": "σύγκριση",
+    "myAccount": "λογαριασμός",
+    "orders": "παραγγελίες",
+    "login": "σύνδεση",
+    "logout": "αποσύνδεση",
+    "search": "αναζήτηση",
+    "categories": "κατηγορίες",
+    "shoppingCart": "καλάθι",
+    "items": "προϊόντα"
+  }
+}

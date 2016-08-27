@@ -1,0 +1,18 @@
+{
+  "language": "english",
+  "locals": {
+    "dollar": "dollar",
+    "pound": "pound",
+    "euro": "euro",
+    "wishlist": "wishlist",
+    "compare": "compare",
+    "myAccount": "my account",
+    "orders": "orders",
+    "login": "login",
+    "logout": "logout",
+    "search": "search",
+    "categories": "categories",
+    "shoppingCart": "shopping cart",
+    "items": "items"
+  }
+}
