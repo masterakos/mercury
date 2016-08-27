@@ -13,6 +13,7 @@
     <link href="assets/theme/css/style.css" rel="stylesheet">
     <link href="assets/theme/css/style-blue.css" rel="stylesheet">
     <link href="assets/theme/css/responsive.css" rel="stylesheet">
+    <link href="assets/bower_components/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
   </head>
   <body ng-app="MercuryApp" ng-controller="AppController as app">

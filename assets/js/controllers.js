@@ -21,10 +21,7 @@ function TopHeaderController(locals, companyInfo, localizationService) {
   vm.email = companyInfo.email;
   
   vm.locals = locals;
-  vm.selectedLanguage = {
-    name: localizationService.language.name,
-    code: localizationService.language.code
-  };
+  vm.selectedLanguage = localizationService.language;
   
   vm.changeLanguage = function(language) {
     localizationService.setLanguage(language);
