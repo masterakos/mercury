@@ -13,7 +13,10 @@
     <link href="assets/theme/css/responsive.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
   </head>
-  <body>
+  <body ng-app="MercuryApp" ng-controller="AppController as app">
+    
+    <ui-view name="topHeader"></ui-view>
+    <ui-view name="header"></ui-view>
     
     <script src="assets/theme/js/jquery.min.js"></script>
     <script src="assets/theme/bootstrap/js/bootstrap.min.js"></script>
@@ -27,5 +30,7 @@
     <script src="assets/bower_components/angular/angular.min.js"></script>
     <script src="assets/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/controllers.js"></script>
+    <script src="assets/js/directives.js"></script>
   </body>
 </html>
