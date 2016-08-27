@@ -1,0 +1,7 @@
+body, .form-control, .dropdown-menu, .product-sorting-bar {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.logo img {
+  max-height: 40px;
+}
