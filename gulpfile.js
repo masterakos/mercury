@@ -5,7 +5,7 @@ var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 
 gulp.task('build-angular-modules', function() {
-  ['controllers', 'directives', 'components', 'services'].forEach(function(directory) {
+  ['controllers', 'directives', 'components', 'services', 'filters'].forEach(function(directory) {
     gulp.src('./assets/' + directory + '/*.js')
     .pipe(concat(directory + '.js'))
     .pipe(gulp.dest('./assets/js'))
@@ -20,7 +20,8 @@ gulp.task('watch-angular-modules', function() {
     './assets/controllers/*.js',
     './assets/directives/*.js',
     './assets/components/*.js',
-    './assets/services/*.js'
+    './assets/services/*.js',
+    './assets/filters/*.js'
   ], [
     'build-angular-modules'
   ]);
