@@ -12,3 +12,12 @@
 */
 
 Route::get('/', 'AppController@application_index');
+Route::post('/login', 'AppController@login');
+Route::get('/me', 'AppController@user_information');
+Route::post('/register', 'AppController@register');
+Route::post('/logout', 'AppController@logout');
+
+/**
+* User Routes
+*/
+
