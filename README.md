@@ -2,6 +2,8 @@
 
 Full featured Open Source shop built with [Laravel](https://laravel.com/) and [Angular](https://angularjs.org/).
 
+### [Live Demo](http://95.85.1.105/mercury)
+
 #### Please Note
 This is a very work in progress so there is a long long road before it's ready for production.
 
