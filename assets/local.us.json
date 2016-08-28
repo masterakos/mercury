@@ -6,13 +6,20 @@
     "euro": "euro",
     "wishlist": "wishlist",
     "compare": "compare",
-    "myAccount": "my account",
+    "my_account": "my account",
     "orders": "orders",
     "login": "login",
     "logout": "logout",
     "search": "search",
     "categories": "categories",
-    "shoppingCart": "shopping cart",
-    "items": "items"
+    "shopping_cart": "shopping cart",
+    "items": "items",
+    "please_enter_information": "please enter your information",
+    "email_address": "email address",
+    "password": "password",
+    "forgot_your_password_?": "forgot your password?",
+    "or_login_using": "or login using",
+    "email": "email",
+    "password": "password"
   }
 }

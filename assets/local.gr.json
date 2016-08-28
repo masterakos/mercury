@@ -13,6 +13,13 @@
     "search": "αναζήτηση",
     "categories": "κατηγορίες",
     "shoppingCart": "καλάθι",
-    "items": "προϊόντα"
+    "items": "προϊόντα",
+    "please_enter_information": "εισάγετε τα στοιχεία σας",
+    "email_address": "ηλεκτρονική διεύθυνση",
+    "password": "κωδικός",
+    "forgot_your_password_?": "ξεχάσατε τον κωδικό σας;",
+    "or_login_using": "ή συνδεθείτε με",
+    "email": "ηλεκτρονική διεύθυνση",
+    "password": "κωδικός"
   }
 }
