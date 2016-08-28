@@ -17,6 +17,23 @@ angular
 
 angular
   .module('MercuryApp')
+  .directive('buttonLoading', function() {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        attrs.$observe('buttonLoading', function(val) {
+          if (val == 'true' || val == true) {
+            $(element).button('loading');
+          } else {
+            $(element).button('reset');
+          }
+        });
+      }
+    };
+  });
+
+angular
+  .module('MercuryApp')
   .directive('i18n', ['$rootScope', 'LocalizationService', '$filter', function($rootScope, LocalizationService, $filter) {
     return function(scope, element, attrs) {
       function applyLocal() {
