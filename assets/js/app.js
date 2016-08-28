@@ -16,6 +16,9 @@ angular
           header: {
             templateUrl: 'assets/templates/header.template.html'
           },
+          navbar: {
+            templateUrl: 'assets/templates/navbar.template.html'
+          }
           // slider: {
           //   templateUrl: 'assets/views/slider.template.html'
           // },

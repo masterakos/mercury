@@ -16,10 +16,12 @@
     <link href="assets/bower_components/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
   </head>
-  <body ng-app="MercuryApp" ng-controller="AppController as app">
+  <body ng-app="MercuryApp" ng-controller="AppController as app" ng-cloak>
     
     <ui-view name="topHeader"></ui-view>
     <ui-view name="header"></ui-view>
+    <ui-view name="navbar"></ui-view>
+    <ui-view name="content"></ui-view>
     
     <script src="assets/theme/js/jquery.min.js"></script>
     <script src="assets/theme/bootstrap/js/bootstrap.min.js"></script>
