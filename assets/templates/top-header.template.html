@@ -29,19 +29,19 @@
         <div class="pull-left hidden-xs"><a href="mailto:{{header.email}}"><i class="fa fa-envelope"></i> {{header.email}}</a></div>
         <div ng-if="app.user.loggedIn" class="pull-right header-account">
           <div class="dropdown">
-            <a href="#" class="dropdown-toggle" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span><i class="fa fa-user"></i> {{app.user.details.firstname | titlelize}} <span i18n="my_account" filter="titlelize"></span> <i class="fa fa-caret-down"></i></span>
+            <a href="#" class="dropdown-toggle" id="account-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span><i class="fa fa-user"></i> {{app.user.details.firstname | titlelize}} <i class="fa fa-caret-down"></i></span>
             </a>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownAccount">
               <li><a href="#">Orders</a></li>
               <li><a href="#">Vouchers</a></li>
               <li><a href="#">Points</a></li>
-              <li><a ng-click="app.logout()">Logout</a></li>
+              <li><a ng-click="app.logout()" class="btn-logout">Logout</a></li>
             </ul>
           </div>
         </div>
         <div ng-if="!app.user.loggedIn" class="pull-right">
-          <a ui-sref="login"><i class="fa fa-sign-in"></i> <span i18n="login" filter="titlelize"></span></a>
+          <a ui-sref="login"><i class="fa fa-sign-in btn-login"></i> <span i18n="login" filter="titlelize"></span></a>
         </div>
         <div class="pull-right hidden-xs"><a href="compare.html"><i class="fa fa-align-left"></i> <span i18n="compare" filter="titlelize"></span></a></div>
         <div class="pull-right hidden-xs"><a href="wishlist.html"><i class="fa fa-heart"></i> <span i18n="wishlist" filter="titlelize"></span></a></div>
