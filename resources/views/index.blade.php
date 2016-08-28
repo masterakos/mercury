@@ -37,5 +37,6 @@
     <script src="assets/js/directives.js"></script>
     <script src="assets/js/services.js"></script>
     <script src="assets/js/filters.js"></script>
+    <script src="assets/js/polyfills.js"></script>
   </body>
 </html>
