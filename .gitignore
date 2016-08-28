@@ -1,4 +1,4 @@
 /vendor
-/node_modules
-assets/bower_components
+node_modules
+bower_components
 .env
