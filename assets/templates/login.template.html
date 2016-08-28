@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12 login-register-form">
+      <div class="title"><span i18n="please_enter_information" filter="titlelize"></span></div>
+      <form ng-submit="login.submit()">
+        <div class="form-group">
+          <label for="emailInputLogin"><span i18n="email_address" filter="titlelize"></span></label>
+          <input type="email" class="form-control" id="emailInputLogin" placeholder="{{app.i18n('email') | titlelize}}" ng-model="login.email">
+        </div>
+        <div class="form-group">
+          <label for="passwordInputLogin">Password</label>
+          <input type="password" class="form-control" id="passwordInputLogin" placeholder="{{app.i18n('password') | titlelize}}" ng-model="login.password">
+        </div>
+        <!-- <div class="checkbox">
+          <input type="checkbox" id="rememberMe">
+          <label for="rememberMe"><span i18n="remember_me"</label>
+        </div> -->
+        <button id="btn-login" button-loading="{{login.loading}}" type="submit" class="btn btn-sm pull-left"><i class="fa fa-sign-in"></i> <span i18n="login" filter="titlelize"></span></button>
+        <!-- <button class="btn btn-sm pull-right" ng-click="login.recoverPasswordDialog($event)"><span i18n="forgot_your_password_?" filter="titlelize"></span></button> -->
+      </form>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+      <div class="title"><span i18n="or_login_using" filter="titlelize"></span></div>
+      <div class="alert alert-warning" role="alert">Login via social networks is unavailable at the moment<i> (Work in progress)</i></div>
+      <button type="button" class="btn btn-primary btn-md disabled"><i class="fa fa-facebook"></i> Facebook</button>
+      <button type="button" class="btn btn-info btn-md disabled"><i class="fa fa-twitter"></i> Twitter</button>
+      <button type="button" class="btn btn-danger btn-md disabled"><i class="fa fa-google-plus"></i> Google Plus</button>
+    </div>
+  </div>
+</div>

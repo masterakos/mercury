@@ -29,13 +29,35 @@ angular
           //   template: 'assets/views/footer.template.html'
           // }
         }
-      });
+      })
+      .state({
+        name: 'login',
+        url: '/login',
+        views: {
+          topHeader: {
+            templateUrl: 'assets/templates/top-header.template.html',
+            controller: 'TopHeaderController',
+            controllerAs: 'header'
+          },
+          header: {
+            templateUrl: 'assets/templates/header.template.html'
+          },
+          navbar: {
+            templateUrl: 'assets/templates/navbar.template.html'
+          },
+          content: {
+            templateUrl: 'assets/templates/login.template.html',
+            controller: 'LoginController',
+            controllerAs: 'login'
+          }
+        }
+      })
       
       $urlRouterProvider.otherwise('/');
   })
   .constant('appDefaults', {
-    language: 'us',
-    currency: 'dollar'
+    language: localStorage.getItem('local.language') || 'us',
+    currency: localStorage.getItem('local.currency') || 'USD'
   })
   .constant('companyInfo', {
     email: 'company@email.com',
@@ -51,6 +73,37 @@ angular
       code: 'gr'
     }
   ])
-  .run(['appDefaults', 'localizationService', function(appDefaults, localizationService) {
-    localizationService.setLanguage(appDefaults.language);
+  .constant('currencies', [
+    {
+      name: 'dollar',
+      code: 'USD',
+      symbol: '$'
+    },
+    {
+      name: 'pound',
+      code: 'GBP',
+      symbol: '£'
+    },
+    {
+      name: 'euro',
+      code: 'EUR',
+      symbol: '€'
+    }
+  ])
+  .run(['appDefaults', 'LocalizationService', 'AccountService', function(appDefaults, LocalizationService, AccountService) {
+    LocalizationService.setLanguage(appDefaults.language);
+    LocalizationService.setCurrency(appDefaults.currency);
+    AccountService.update();
   }])
+  .directive('href', function() {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        if (attrs.href == '#') {
+          element.on('click', function(e) {
+            e.preventDefault();
+          });
+        }
+      }
+    };
+  })
